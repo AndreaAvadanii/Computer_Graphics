@@ -215,6 +215,7 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj: C:/Users/andre/Documents/GitH
   _deps/glm-src/glm/vec3.hpp \
   _deps/glm-src/glm/vec4.hpp \
   _deps/glm-src/glm/vector_relational.hpp \
+  C:/Users/andre/Documents/GitHub/Computer_Graphics/include/Camera.h \
   C:/Users/andre/Documents/GitHub/Computer_Graphics/include/KHR/khrplatform.h \
   C:/Users/andre/Documents/GitHub/Computer_Graphics/include/glad/glad.h \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -913,6 +914,8 @@ _deps/glm-src/glm/trigonometric.hpp:
 _deps/glm-src/glm/vec2.hpp:
 
 _deps/glm-src/glm/vec3.hpp:
+
+C:/Users/andre/Documents/GitHub/Computer_Graphics/include/Camera.h:
 
 C:/msys64/ucrt64/include/_mingw_stat64.h:
 
