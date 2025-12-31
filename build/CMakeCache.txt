@@ -14,7 +14,120 @@
 # EXTERNAL cache entries
 ########################
 
-//Build shared libraries
+//Android JNI IOSystem support is active
+ASSIMP_ANDROID_JNIIOSYSTEM:BOOL=OFF
+
+//Path for library output files
+ASSIMP_ARCHIVE_OUTPUT_DIRECTORY:STRING=C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/lib
+
+//Enable AddressSanitizer.
+ASSIMP_ASAN:BOOL=OFF
+
+//Path the tool executables are installed to.
+ASSIMP_BIN_INSTALL_DIR:STRING=bin
+
+//default value of all ASSIMP_BUILD_XXX_EXPORTER values
+ASSIMP_BUILD_ALL_EXPORTERS_BY_DEFAULT:BOOL=ON
+
+//default value of all ASSIMP_BUILD_XXX_IMPORTER values
+ASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT:BOOL=ON
+
+//describe the current architecture.
+ASSIMP_BUILD_ARCHITECTURE:STRING=
+
+//If the supplementary tools for Assimp are built in addition to
+// the library.
+ASSIMP_BUILD_ASSIMP_TOOLS:BOOL=OFF
+
+//describe the current compiler.
+ASSIMP_BUILD_COMPILER:STRING=
+
+//Build documentation using Doxygen.
+ASSIMP_BUILD_DOCS:BOOL=OFF
+
+//If the Draco libraries are to be built. Primarily for glTF
+ASSIMP_BUILD_DRACO:BOOL=OFF
+
+//Build package as Mac OS X Framework bundle.
+ASSIMP_BUILD_FRAMEWORK:BOOL=OFF
+
+ASSIMP_BUILD_MMD_IMPORTER:BOOL=OFF
+
+//Build the C4D importer, which relies on the non-free Cineware
+// SDK.
+ASSIMP_BUILD_NONFREE_C4D_IMPORTER:BOOL=OFF
+
+//If the official samples are built as well (needs Glut).
+ASSIMP_BUILD_SAMPLES:BOOL=OFF
+
+//If the test suite for Assimp is built in addition to the library.
+ASSIMP_BUILD_TESTS:BOOL=OFF
+
+//Build your own zlib
+ASSIMP_BUILD_ZLIB:BOOL=OFF
+
+//Enable this to measure test coverage.
+ASSIMP_COVERALLS:BOOL=OFF
+
+//Set to ON to enable double precision processing
+ASSIMP_DOUBLE_PRECISION:BOOL=OFF
+
+//Enable Hunter package manager support
+ASSIMP_HUNTER_ENABLED:BOOL=OFF
+
+//Don't call git to get the hash.
+ASSIMP_IGNORE_GIT_HASH:BOOL=OFF
+
+//Path the header files are installed to.
+ASSIMP_INCLUDE_INSTALL_DIR:STRING=include
+
+//Inject debug postfix in .a/.so/.dll lib names
+ASSIMP_INJECT_DEBUG_POSTFIX:BOOL=OFF
+
+//Disable this if you want to use assimp as a submodule.
+ASSIMP_INSTALL:BOOL=ON
+
+//Path for library output files
+ASSIMP_LIBRARY_OUTPUT_DIRECTORY:STRING=C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/bin
+
+//Suffix to append to library names
+ASSIMP_LIBRARY_SUFFIX:STRING=
+
+//Path the built library files are installed to.
+ASSIMP_LIB_INSTALL_DIR:STRING=lib
+
+//Disable Assimp's export functionality.
+ASSIMP_NO_EXPORT:BOOL=OFF
+
+//Set to ON to generate CPack configuration files and packaging
+// targets
+ASSIMP_OPT_BUILD_PACKAGES:BOOL=OFF
+
+//the package-specific version used for uploading the sources
+ASSIMP_PACKAGE_VERSION:STRING=0
+
+//Suppress rapidjson warning on MSVC (NOTE: breaks android build)
+ASSIMP_RAPIDJSON_NO_MEMBER_ITERATOR:BOOL=ON
+
+//Path for runtime output files
+ASSIMP_RUNTIME_OUTPUT_DIRECTORY:STRING=C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/bin
+
+//Enable Undefined Behavior sanitizer.
+ASSIMP_UBSAN:BOOL=OFF
+
+//Treat all warnings as errors.
+ASSIMP_WARNINGS_AS_ERRORS:BOOL=OFF
+
+//Value Computed by CMake
+Assimp_BINARY_DIR:STATIC=C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build
+
+//Value Computed by CMake
+Assimp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Assimp_SOURCE_DIR:STATIC=C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src
+
+//Build package with shared libraries.
 BUILD_SHARED_LIBS:BOOL=OFF
 
 //Path to a program.
@@ -87,6 +200,9 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //Libraries linked by default with all C applications.
 CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
+//Debug Postfix for lib, samples and tools
+CMAKE_DEBUG_POSTFIX:STRING=
+
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=C:/msys64/ucrt64/bin/dlltool.exe
 
@@ -151,7 +267,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/OpenGL_3D_Engine
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Computer_Graphics
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -336,6 +452,10 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
+// for assimp
+FETCHCONTENT_SOURCE_DIR_ASSIMP:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for glfw
 FETCHCONTENT_SOURCE_DIR_GLFW:PATH=
 
@@ -345,6 +465,9 @@ FETCHCONTENT_SOURCE_DIR_GLM:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of assimp
+FETCHCONTENT_UPDATES_DISCONNECTED_ASSIMP:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of glfw
 FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
@@ -382,20 +505,36 @@ GLFW_USE_HYBRID_HPG:BOOL=OFF
 //Assume the Vulkan loader is linked with the application
 GLFW_VULKAN_STATIC:BOOL=OFF
 
-//Value Computed by CMake
-OpenGL_3D_Engine_BINARY_DIR:STATIC=C:/Users/andre/Documents/GitHub/Computer_Graphics/build
+//the suffix for the assimp MinGW shared library
+LIBRARY_SUFFIX:STRING=-5
 
-//Value Computed by CMake
-OpenGL_3D_Engine_IS_TOP_LEVEL:STATIC=ON
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
 
-//Value Computed by CMake
-OpenGL_3D_Engine_SOURCE_DIR:STATIC=C:/Users/andre/Documents/GitHub/Computer_Graphics
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/ucrt64/bin/pkg-config.exe
+
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=C:/msys64/ucrt64/include
+
+//Path to a library.
+ZLIB_LIBRARY_DBG:FILEPATH=C:/msys64/ucrt64/lib/libz.a
+
+//Path to a library.
+ZLIB_LIBRARY_REL:FILEPATH=C:/msys64/ucrt64/lib/libz.a
+
+//Dependencies for the target
+assimp_LIB_DEPENDS:STATIC=optimized;C:/msys64/ucrt64/lib/libz.a;debug;C:/msys64/ucrt64/lib/libz.a;general;-static-libgcc;general;-static-libstdc++;general;-Wl,-Bstatic;general;-lstdc++;general;-lwinpthread;
 
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: ASSIMP_BUILD_ARCHITECTURE
+ASSIMP_BUILD_ARCHITECTURE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ASSIMP_BUILD_COMPILER
+ASSIMP_BUILD_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -534,7 +673,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -594,12 +733,76 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 DINPUT_H_FOUND:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[C:/msys64/ucrt64/bin/pkg-config.exe][v2.5.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+UNZIP_CFLAGS:INTERNAL=
+UNZIP_CFLAGS_I:INTERNAL=
+UNZIP_CFLAGS_OTHER:INTERNAL=
+UNZIP_FOUND:INTERNAL=
+UNZIP_INCLUDEDIR:INTERNAL=
+UNZIP_LIBDIR:INTERNAL=
+UNZIP_LIBS:INTERNAL=
+UNZIP_LIBS_L:INTERNAL=
+UNZIP_LIBS_OTHER:INTERNAL=
+UNZIP_LIBS_PATHS:INTERNAL=
+UNZIP_MODULE_NAME:INTERNAL=
+UNZIP_PREFIX:INTERNAL=
+UNZIP_STATIC_CFLAGS:INTERNAL=
+UNZIP_STATIC_CFLAGS_I:INTERNAL=
+UNZIP_STATIC_CFLAGS_OTHER:INTERNAL=
+UNZIP_STATIC_LIBDIR:INTERNAL=
+UNZIP_STATIC_LIBS:INTERNAL=
+UNZIP_STATIC_LIBS_L:INTERNAL=
+UNZIP_STATIC_LIBS_OTHER:INTERNAL=
+UNZIP_STATIC_LIBS_PATHS:INTERNAL=
+UNZIP_VERSION:INTERNAL=
+UNZIP_minizip_INCLUDEDIR:INTERNAL=
+UNZIP_minizip_LIBDIR:INTERNAL=
+UNZIP_minizip_PREFIX:INTERNAL=
+UNZIP_minizip_VERSION:INTERNAL=
 //Have include xinput.h
 XINPUT_H_FOUND:INTERNAL=1
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_DBG
+ZLIB_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_REL
+ZLIB_LIBRARY_REL-ADVANCED:INTERNAL=1
+ZLIB_PKGC_CFLAGS:INTERNAL=
+ZLIB_PKGC_CFLAGS_I:INTERNAL=
+ZLIB_PKGC_CFLAGS_OTHER:INTERNAL=
+ZLIB_PKGC_FOUND:INTERNAL=
+ZLIB_PKGC_INCLUDEDIR:INTERNAL=
+ZLIB_PKGC_LIBDIR:INTERNAL=
+ZLIB_PKGC_LIBS:INTERNAL=
+ZLIB_PKGC_LIBS_L:INTERNAL=
+ZLIB_PKGC_LIBS_OTHER:INTERNAL=
+ZLIB_PKGC_LIBS_PATHS:INTERNAL=
+ZLIB_PKGC_MODULE_NAME:INTERNAL=
+ZLIB_PKGC_PREFIX:INTERNAL=
+ZLIB_PKGC_STATIC_CFLAGS:INTERNAL=
+ZLIB_PKGC_STATIC_CFLAGS_I:INTERNAL=
+ZLIB_PKGC_STATIC_CFLAGS_OTHER:INTERNAL=
+ZLIB_PKGC_STATIC_LIBDIR:INTERNAL=
+ZLIB_PKGC_STATIC_LIBS:INTERNAL=
+ZLIB_PKGC_STATIC_LIBS_L:INTERNAL=
+ZLIB_PKGC_STATIC_LIBS_OTHER:INTERNAL=
+ZLIB_PKGC_STATIC_LIBS_PATHS:INTERNAL=
+ZLIB_PKGC_VERSION:INTERNAL=
+ZLIB_PKGC_zzip-zlib-config_INCLUDEDIR:INTERNAL=
+ZLIB_PKGC_zzip-zlib-config_LIBDIR:INTERNAL=
+ZLIB_PKGC_zzip-zlib-config_PREFIX:INTERNAL=
+ZLIB_PKGC_zzip-zlib-config_VERSION:INTERNAL=
+//x
+ZLIB_PREFIX_PATH_INT_CHECK:INTERNAL=
 //Test _GLFW_HAS_64ASLR
 _GLFW_HAS_64ASLR:INTERNAL=1
 //Test _GLFW_HAS_ASLR
@@ -607,5 +810,7 @@ _GLFW_HAS_ASLR:INTERNAL=1
 //Test _GLFW_HAS_DEP
 _GLFW_HAS_DEP:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/OpenGL_3D_Engine
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/Computer_Graphics
+__pkg_config_checked_UNZIP:INTERNAL=1
+__pkg_config_checked_ZLIB_PKGC:INTERNAL=1
 

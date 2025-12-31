@@ -61,3 +61,16 @@ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glfw-build/tests/C
 C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glfw-build/tests/CMakeFiles/install.dir
 C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glfw-build/tests/CMakeFiles/install/local.dir
 C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glfw-build/tests/CMakeFiles/install/strip.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/edit_cache.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/rebuild_cache.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/list_install_components.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/install.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/install/local.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/CMakeFiles/install/strip.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/assimp.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/edit_cache.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/rebuild_cache.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/list_install_components.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/install.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/install/local.dir
+C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/code/CMakeFiles/install/strip.dir

@@ -35,6 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+  "C:/Program Files/CMake/share/cmake-4.2/Modules/FindPkgConfig.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake"
@@ -65,6 +66,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeSystem.cmake"
+  "_deps/assimp-src/CMakeLists.txt"
+  "_deps/assimp-src/assimp.pc.in"
+  "_deps/assimp-src/cmake-modules/FindPkgMacros.cmake"
+  "_deps/assimp-src/cmake-modules/FindZLIB.cmake"
+  "_deps/assimp-src/cmake-modules/PrecompiledHeader.cmake"
+  "_deps/assimp-src/cmake-modules/assimp-plain-config.cmake.in"
+  "_deps/assimp-src/code/CMakeLists.txt"
+  "_deps/assimp-src/include/assimp/config.h.in"
+  "_deps/assimp-src/revision.h.in"
   "_deps/glfw-src/CMakeLists.txt"
   "_deps/glfw-src/cmake_uninstall.cmake.in"
   "_deps/glfw-src/examples/CMakeLists.txt"
@@ -85,6 +95,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/glfw-subbuild/CMakeLists.txt"
   "_deps/glm-subbuild/CMakeLists.txt"
+  "_deps/assimp-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glfw-build/src/glfw3Config.cmake"
   "_deps/glfw-build/src/glfw3ConfigVersion.cmake"
@@ -95,6 +106,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/glfw-build/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glfw-build/examples/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glfw-build/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/assimp-build/generated/assimpConfigVersion.cmake"
+  "_deps/assimp-build/generated/assimpConfig.cmake"
+  "_deps/assimp-build/assimp.pc"
+  "_deps/assimp-build/revision.h"
+  "_deps/assimp-build/include/assimp/config.h"
+  "_deps/assimp-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/assimp-build/code/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -132,4 +150,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/glfw-build/tests/CMakeFiles/title.dir/DependInfo.cmake"
   "_deps/glfw-build/tests/CMakeFiles/triangle-vulkan.dir/DependInfo.cmake"
   "_deps/glfw-build/tests/CMakeFiles/windows.dir/DependInfo.cmake"
+  "_deps/assimp-build/code/CMakeFiles/assimp.dir/DependInfo.cmake"
   )

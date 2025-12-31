@@ -35,6 +35,36 @@ CMakeFiles/Computer_Graphics.dir/src/glad.c.obj
 
 CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/Users/andre/Documents/GitHub/Computer_Graphics/src/main.cpp
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-build/include/assimp/config.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/Compiler/poppack1.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/Compiler/pushpack1.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/Importer.hpp
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/MathFunctions.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/aabb.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/anim.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/camera.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/color4.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/color4.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/defs.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/light.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/material.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/material.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/matrix3x3.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/matrix3x3.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/matrix4x4.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/matrix4x4.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/mesh.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/metadata.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/postprocess.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/quaternion.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/quaternion.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/scene.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/texture.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/types.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/vector2.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/vector2.inl
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/vector3.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/assimp-src/include/assimp/vector3.inl
  C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glfw-src/include/GLFW/glfw3.h
  C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glm-src/glm/common.hpp
  C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glm-src/glm/detail/_fixes.hpp
@@ -219,16 +249,22 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/Users/andre/Documents/GitHub/Computer_Graphics/build/_deps/glm-src/glm/vector_relational.hpp
  C:/Users/andre/Documents/GitHub/Computer_Graphics/include/Camera.h
  C:/Users/andre/Documents/GitHub/Computer_Graphics/include/KHR/khrplatform.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/include/Mesh.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/include/Model.h
  C:/Users/andre/Documents/GitHub/Computer_Graphics/include/glad/glad.h
+ C:/Users/andre/Documents/GitHub/Computer_Graphics/include/stb_image.h
  C:/msys64/ucrt64/include/_mingw.h
  C:/msys64/ucrt64/include/_mingw_mac.h
  C:/msys64/ucrt64/include/_mingw_off_t.h
  C:/msys64/ucrt64/include/_mingw_secapi.h
  C:/msys64/ucrt64/include/_mingw_stat64.h
+ C:/msys64/ucrt64/include/_mingw_stdarg.h
  C:/msys64/ucrt64/include/_timeval.h
  C:/msys64/ucrt64/include/assert.h
+ C:/msys64/ucrt64/include/c++/15.2.0/algorithm
  C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h
  C:/msys64/ucrt64/include/c++/15.2.0/bit
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h
@@ -271,20 +307,28 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h
  C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc
  C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h
  C:/msys64/ucrt64/include/c++/15.2.0/cassert
  C:/msys64/ucrt64/include/c++/15.2.0/cctype
@@ -315,8 +359,11 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/msys64/ucrt64/include/c++/15.2.0/iostream
  C:/msys64/ucrt64/include/c++/15.2.0/istream
  C:/msys64/ucrt64/include/c++/15.2.0/limits
+ C:/msys64/ucrt64/include/c++/15.2.0/math.h
  C:/msys64/ucrt64/include/c++/15.2.0/new
  C:/msys64/ucrt64/include/c++/15.2.0/ostream
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h
  C:/msys64/ucrt64/include/c++/15.2.0/stdexcept
  C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h
@@ -339,6 +386,7 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/msys64/ucrt64/include/c++/15.2.0/tuple
  C:/msys64/ucrt64/include/c++/15.2.0/type_traits
  C:/msys64/ucrt64/include/c++/15.2.0/typeinfo
+ C:/msys64/ucrt64/include/c++/15.2.0/vector
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -377,6 +425,7 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h
  C:/msys64/ucrt64/include/sec_api/wchar_s.h
  C:/msys64/ucrt64/include/signal.h
+ C:/msys64/ucrt64/include/stdarg.h
  C:/msys64/ucrt64/include/stddef.h
  C:/msys64/ucrt64/include/stdint.h
  C:/msys64/ucrt64/include/stdio.h
@@ -389,10 +438,14 @@ CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
  C:/msys64/ucrt64/include/vadefs.h
  C:/msys64/ucrt64/include/wchar.h
  C:/msys64/ucrt64/include/wctype.h
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h
 

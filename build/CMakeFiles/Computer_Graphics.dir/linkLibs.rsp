@@ -1,1 +1,1 @@
- "_deps/glfw-build/src/libglfw3.a" -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ "_deps/glfw-build/src/libglfw3.a" -lopengl32 "_deps/assimp-build/lib/libassimp.a" C:/msys64/ucrt64/lib/libz.a -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lwinpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

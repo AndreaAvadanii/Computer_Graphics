@@ -86,7 +86,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.2.4-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -589,6 +589,19 @@ windows/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\tests\CMakeFiles\windows.dir\build.make _deps/glfw-build/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
+#=============================================================================
+# Target rules for targets named assimp
+
+# Build rule for target.
+assimp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 assimp
+.PHONY : assimp
+
+# fast build rule for target.
+assimp/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\assimp-build\code\CMakeFiles\assimp.dir\build.make _deps/assimp-build/code/CMakeFiles/assimp.dir/build
+.PHONY : assimp/fast
+
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
@@ -652,6 +665,7 @@ help:
 	@echo ... uninstall
 	@echo ... update_mappings
 	@echo ... Computer_Graphics
+	@echo ... assimp
 	@echo ... boing
 	@echo ... clipboard
 	@echo ... cursor

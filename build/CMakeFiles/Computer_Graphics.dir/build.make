@@ -113,6 +113,8 @@ Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/src/main.cpp.obj
 Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/src/glad.c.obj
 Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/build.make
 Computer_Graphics.exe: _deps/glfw-build/src/libglfw3.a
+Computer_Graphics.exe: _deps/assimp-build/lib/libassimp.a
+Computer_Graphics.exe: C:/msys64/ucrt64/lib/libz.a
 Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/linkLibs.rsp
 Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/objects1.rsp
 Computer_Graphics.exe: CMakeFiles/Computer_Graphics.dir/link.txt
