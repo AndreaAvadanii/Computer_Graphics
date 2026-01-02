@@ -13,7 +13,7 @@
 #include <iostream>
 
 // --- SETUP CAMERA ---
-Camera camera(glm::vec3(0.0f, 3.0f, 15.0f)); 
+Camera camera(glm::vec3(0.0f, 3.0f, 15.0f));
 float lastX = 1920.0f / 2.0; 
 float lastY = 1080.0f / 2.0;
 bool firstMouse = true;
@@ -99,8 +99,18 @@ int main() {
 
     // --- CARICAMENTO MODELLO ---
     // Assicurati che questo percorso sia corretto e che Model.h sia aggiornato
-    Model ourModel("C:\\Users\\andre\\Documents\\GitHub\\Computer_Graphics\\assets\\trees\\trees.obj"); 
+    Model floorModel("C:\\Users\\andre\\Documents\\GitHub\\Computer_Graphics\\assets\\terrain\\floor.obj");
+    // --- DISEGNO IL PAVIMENTO ---
+    glm::mat4 modelFloor = glm::mat4(1.0f);
+    // Lo mettiamo a Y = -2.0 (o dove poggiano i tuoi alberi)
+    modelFloor = glm::translate(modelFloor, glm::vec3(0.0f, -2.0f, 0.0f)); 
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, &modelFloor[0][0]);
+    floorModel.Draw(shaderProgram);
 
+    Model rockModel("C:\\Users\\andre\\Documents\\GitHub\\Computer_Graphics\\assets\\granite_stone\\granite_stone.obj"); 
+    Model treeModel("C:\\Users\\andre\\Documents\\GitHub\\Computer_Graphics\\assets\\realistic_trees\\realistic_trees.obj"); 
+
+    
     while (!glfwWindowShouldClose(window)) {
         float currentFrame = static_cast<float>(glfwGetTime());
         deltaTime = currentFrame - lastFrame;
@@ -120,13 +130,27 @@ int main() {
 
         glm::mat4 view = camera.GetViewMatrix();
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, &view[0][0]);
+        camera.MovementSpeed = 25.0f; 
 
-        // Draw Model
+        // --- 1. DISEGNA PAVIMENTO ---
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(0.0f, -5.0f, -10.0f)); 
+        model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f)); 
+        glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, &model[0][0]);
+        floorModel.Draw(shaderProgram); // <--- Usa floorModel
+
+        // --- 2. DISEGNA ALBERO ---
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0f, -2.0f, -5.0f)); 
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f)); 
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, &model[0][0]);
-        ourModel.Draw(shaderProgram);
+        treeModel.Draw(shaderProgram); // <--- CAMBIA QUI: da ourModel a treeModel
+
+        // --- 3. DISEGNA SASSO ---
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(3.0f, -2.0f, -2.0f)); 
+        model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));       
+        glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, &model[0][0]);
+        rockModel.Draw(shaderProgram); // <--- Usa rockModel
 
         glfwSwapBuffers(window);
         glfwPollEvents();
